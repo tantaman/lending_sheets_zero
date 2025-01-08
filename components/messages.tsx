@@ -52,5 +52,6 @@ type Props = {
 };
 
 export function Messages({ messages }: Props) {
+  // console.log(messages);
 	return <DataTable columns={columns} data={messages} rowHeight={65} />;
 }

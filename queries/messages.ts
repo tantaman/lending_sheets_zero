@@ -37,7 +37,7 @@ export function messagesQuery(
 	// Need to set a senderID to make this work!
 	const senderID = "";
 	let query = z.query.message
-		.whereExists("sender", (q) => q.where("id", senderID))
+		.whereExists("sender", (q) => q.where("id", "7VoEoJWEwn"))
 		.related("sender", (q) => q.one())
 		.orderBy(sort, sortDir);
 
